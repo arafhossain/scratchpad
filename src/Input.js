@@ -12,6 +12,7 @@ export default class Input extends Component {
       this.setState({ text: "" });
     };
     const input = document.getElementById("textArea");
+    input.focus();
     let timeout = null;
     input.addEventListener("keyup", function (e) {
       clearTimeout(timeout);
